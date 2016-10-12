@@ -17,8 +17,8 @@ public class MainApp {
 		objA.getMessage();
 		
 		
-		ViViZhang objB = (ViViZhang) context.getBean("vivizhang");
-		objB.setName("Hello,I am vivizhang");
-		objB.getName();
+		HelloWorld objB = (HelloWorld) context.getBean("helloworld");
+//		objB.setName("Hello,I am vivizhang");
+		objB.getMessage();
 	}
 }

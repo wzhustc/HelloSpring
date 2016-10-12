@@ -5,11 +5,11 @@
     xsi:schemaLocation="http://www.springframework.org/schema/beans
     http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
 
-   <bean id="helloworld" class="com.springtutorials.HelloWorld">
+   <bean id="helloworld" class="com.springtutorials.HelloWorld" scope="singleton">
        <property name="message" value="HelloWorld"/>
    </bean>
-   <bean id="vivizhang" class="com.springtutorials.ViViZhang">
+  <!-- <bean id="vivizhang" class="com.springtutorials.ViViZhang" >
    		<property name="name" value="vivizhang"/>
-   </bean>
+   </bean> -->
 
 </beans>
