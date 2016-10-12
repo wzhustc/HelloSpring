@@ -6,7 +6,10 @@
     http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
 
    <bean id="helloworld" class="com.springtutorials.HelloWorld">
-       <property name="message" value="vivizhang"/>
+       <property name="message" value="HelloWorld"/>
+   </bean>
+   <bean id="vivizhang" class="com.springtutorials.ViViZhang">
+   		<property name="name" value="vivizhang"/>
    </bean>
 
 </beans>

@@ -12,8 +12,28 @@ public class MainApp {
 		//这个方法使用 bean 的 ID 返回一个最终可以转换为实际对象的通用对象
 		//这里的getBean的参数对应的是Beans.xml中的id=""，如果不一致，报错。
 		//输出的值是id=""对应的value值。
-		HelloWorld obj = (HelloWorld)context.getBean("helloworld");
+		HelloWorld objA = (HelloWorld)context.getBean("helloworld");
+		objA.setMessage("Hello, I am objA");
+		objA.getMessage();
 		
-		obj.getMessage();
+		
+		ViViZhang objB = (ViViZhang) context.getBean("vivizhang");
+		objB.setName("Hello,I am vivizhang");
+		objB.getName();
 	}
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
